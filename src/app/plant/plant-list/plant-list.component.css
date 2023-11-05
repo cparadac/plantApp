@@ -1,0 +1,30 @@
+.container-fluid {
+    padding: 0px;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 2px inset rgba(0, 0, 0, 0.2);
+}
+
+img {
+    height: 305px;
+    width: 1244px;
+    text-align: left;
+}
+
+p {
+    font-family: 'Inter';
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+table tr {
+    border-bottom: 2px inset rgba(0, 0, 0, 0.2);
+}

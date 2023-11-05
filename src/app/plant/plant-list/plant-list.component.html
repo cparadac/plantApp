@@ -1,0 +1,37 @@
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="card mb-12 col-md-9 border-0">
+      <div class="card-header">
+        <h1 class="card-title"><b>Vivero el Otoño</b></h1>
+      </div>
+      <div class="card-header">
+        <img
+            src="../../../assets/image 2.png"
+            alt="Card image cap"
+          />
+      </div>
+      <div class="card-body col-md-9">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre Comun</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Clima</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let plant of plants">
+              <th scope="row">{{plant.id}}</th>
+              <td>{{plant.nombre_comun}}</td>
+              <td>{{plant.tipo}}</td>
+              <td>{{plant.clima}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Total plantas de Interior: {{ getQuantityplantsByType('Interior') }}</p>
+        <p>Total plantas de Exterior: {{ getQuantityplantsByType('Exterior') }}</p>
+      </div>
+    </div>
+  </div>
+</div>
